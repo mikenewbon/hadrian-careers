@@ -15,9 +15,26 @@ $cyan: #88dcdd;
 
 // Options
 $enable-negative-margins: true;
+$enable-shadows: true;
 
 // Spacing
 $spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
+
+// Components
+$border-width: 2px;
+$border-radius: 0rem;
+$border-radius-sm: 0rem;
+$border-radius-lg: 0rem;
+$border-radius-xl: 0rem;
+$border-radius-2xl: 0rem;
 
 // Grid columns
 $grid-gutter-width: 2rem;
@@ -25,6 +42,9 @@ $grid-gutter-width: 2rem;
 // Cards
 $card-spacer-y: ($spacer * 4);
 $card-spacer-x: ($spacer * 4);
+$card-box-shadow: -8px 8px 0px $black;
+$card-border-width: 4px;
+$card-border-color: $black;
 
 // Typography
 $font-family-sans-serif: "Hack", -apple-system, "Segoe UI", Roboto,
@@ -48,16 +68,22 @@ $font-weight-bolder: bolder;
 // Links
 $link-color: $cyan;
 
-// Components
-$border-radius: 0rem;
-$border-radius-sm: 0rem;
-$border-radius-lg: 0rem;
-$border-radius-xl: 0rem;
-$border-radius-2xl: 0rem;
-
 // Buttons
 $btn-font-family: $headings-font-family;
 $btn-font-weight: $font-weight-bold;
+$btn-padding-y: 0.625rem;
+$btn-padding-x: 1rem;
+$btn-border-width: $border-width;
+
+$btn-box-shadow: -4px 4px 0 $black;
+
+// Navs
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 2rem;
 
 // Navbar
 $navbar-padding-y: $spacer * 2;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.25rem;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$cyan}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");

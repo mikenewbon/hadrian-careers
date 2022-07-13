@@ -1,0 +1,10 @@
+.navbar {
+  @include media-breakpoint-down(md) {
+    padding: 1rem 0.25rem;
+  }
+}
+
+.navbar-toggler {
+  border-color: $black;
+  background-color: $dark;
+}
