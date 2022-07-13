@@ -11,7 +11,8 @@ $gray-800: #3e3c4a;
 $gray-900: #272434;
 $black: #100d1f;
 
-$cyan: #88dcdd;
+$cyan: #33bcbd;
+$darkmode-cyan: #88dcdd;
 
 // Options
 $enable-negative-margins: true;
@@ -89,3 +90,8 @@ $navbar-nav-link-padding-x: 1rem;
 $navbar-toggler-padding-y: 0.25rem;
 $navbar-toggler-padding-x: 0.25rem;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$cyan}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+// Badges
+$badge-border-radius: 8px;
+$badge-font-weight: $font-weight-normal;
+$badge-padding-x: 0.5em;

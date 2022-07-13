@@ -7,3 +7,16 @@
 .card-window {
   border-top-width: 48px;
 }
+
+.text-bg-dark {
+  .text-info {
+    color: $darkmode-cyan !important;
+  }
+  a {
+    color: $darkmode-cyan !important;
+  }
+}
+
+.bg-darkmode-info {
+  background-color: $darkmode-cyan;
+}
