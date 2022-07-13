@@ -26,6 +26,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 2,
   5: $spacer * 4,
+  6: $spacer * 8,
 );
 
 // Components
@@ -69,7 +70,7 @@ $font-weight-bolder: bolder;
 $link-color: $cyan;
 
 // Buttons
-$btn-font-family: $headings-font-family;
+// $btn-font-family: $headings-font-family;
 $btn-font-weight: $font-weight-bold;
 $btn-padding-y: 0.625rem;
 $btn-padding-x: 1rem;
@@ -80,6 +81,7 @@ $btn-box-shadow: -4px 4px 0 $black;
 // Navs
 $nav-link-padding-y: 1rem;
 $nav-link-padding-x: 2rem;
+$nav-link-font-weight: $font-weight-bold;
 
 // Navbar
 $navbar-padding-y: $spacer * 2;
