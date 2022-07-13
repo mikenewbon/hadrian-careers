@@ -13,7 +13,7 @@
   <nav class="navbar sticky-top navbar-expand-md bg-info">
     <div class="container-md justify-content-center">
       <div class="container-nav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="img/Wordmark_Blue.png" alt="Hadrian Logo" height="32">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,13 +26,13 @@
               <a class="nav-link" href="#values">Values</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Benefits</a>
+              <a class="nav-link" href="#benefits">Benefits</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-dark btn-outline ms-md-3" href="#">Open Positions</a>
+              <a class="btn btn-dark btn-outline ms-md-3" href="#openpositions">Open positions</a>
             </li>
           </ul>
         </div>
@@ -59,17 +59,17 @@
   </header>
 
   <section id="values" class="pt-6 pb-5">
-    <div class="container">
+    <div class="container-md px-4">
 
       <div class="row justify-content-center">
-        <div class="col-3">
+        <div class="col-xl-5 col-xxl-3 mb-3">
           <p class="text-info mb-2">Values</p>
           <h2>Our team is proud to represent us.</h2>
           <p>Our values bring us all together as a driving force that motivates and excites us every day.</p>
         </div>
-        <div class="col-6 offset-1">
+        <div class="col-xl-7 col-xxl-6 offset-xxl-1">
           <div class="row mb-4">
-            <div class="col-6">
+            <div class="col-md-6 mb-4 mb-md-0">
               <div class="card">
                 <div class="card-body p-4">
                   <h3 class="text-info">Autonomy.</h3>
@@ -78,7 +78,7 @@
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body p-4">
                   <h3 class="text-info">Autonomy.</h3>
@@ -89,7 +89,7 @@
 
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 mb-4 mb-md-0">
               <div class="card">
                 <div class="card-body p-4">
                   <h3 class="text-info">Autonomy.</h3>
@@ -97,7 +97,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body p-4">
                   <h3 class="text-info">Autonomy.</h3>
@@ -113,7 +113,39 @@
     </div>
   </section>
 
+  <section class="p-3 p-md-4 p-lg-5 d-md-flex gap-2 gap-md-4">
+    <div class="mb-3 mb-md-0" style="flex: calc(691/700);">
+      <img src="img/laptop-promo.png" alt="" class="img-fluid">
+    </div>
+    <div style="flex: calc(1069/700);">
+      <img src="img/sofa-promo.png" alt="" class="img-fluid">
+    </div>
+
+
+  </section>
+
+  <section id="work"></section>
+  <section id="benefits"></section>
+  <section id="openpositions"></section>
+
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.querySelector('.navbar');
+
+      let prevScrollpos = window.pageYOffset;
+      window.onscroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          if (nav) nav.classList.add('scroll');
+        } else {
+          if (nav) nav.classList.remove('scroll');
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    });
+  </script>
 </body>
 
 </html>
