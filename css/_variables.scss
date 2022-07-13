@@ -1,0 +1,63 @@
+// Color system
+$white: #fff;
+$gray-100: #e6e6e8;
+$gray-200: #cfced2;
+$gray-300: #b6b5bb;
+$gray-400: #9f9ea5;
+$gray-500: #87858e;
+$gray-600: #6e6c77;
+$gray-700: #575561;
+$gray-800: #3e3c4a;
+$gray-900: #272434;
+$black: #100d1f;
+
+$cyan: #88dcdd;
+
+// Options
+$enable-negative-margins: true;
+
+// Spacing
+$spacer: 1rem;
+
+// Grid columns
+$grid-gutter-width: 2rem;
+
+// Cards
+$card-spacer-y: ($spacer * 4);
+$card-spacer-x: ($spacer * 4);
+
+// Typography
+$font-family-sans-serif: "Hack", -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: "Hack", SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$headings-font-family: "Euclid Square", -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight: bold;
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 4;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+// Links
+$link-color: $cyan;
+
+// Components
+$border-radius: 0rem;
+$border-radius-sm: 0rem;
+$border-radius-lg: 0rem;
+$border-radius-xl: 0rem;
+$border-radius-2xl: 0rem;
+
+// Buttons
+$btn-font-family: $headings-font-family;
+$btn-font-weight: $font-weight-bold;
+
+// Navbar
+$navbar-padding-y: $spacer * 2;
