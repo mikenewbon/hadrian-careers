@@ -8,3 +8,21 @@
     justify-content: space-between;
   }
 }
+
+header {
+  position: relative;
+}
+
+.scramble-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  .h1 {
+    position: absolute;
+    font-family: $font-family-monospace;
+    color: #c3eded;
+  }
+}
