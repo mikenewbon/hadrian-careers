@@ -39,7 +39,7 @@
 
 ## Getting Started
 
-If you want to build the project, you will first need to run `npm install` for the prerequiste node modules. You can then simply run parcel with `parcel index.html` which should also build the SCSS and a live-reload server.
+If you want to build the project, you will first need to run `npm install` for the prerequiste node modules. You can then simply run parcel with `npm run start` which should also build the SCSS and a live-reload server, or for production export `npm run build`.
 
 <!-- LICENSE -->
 
