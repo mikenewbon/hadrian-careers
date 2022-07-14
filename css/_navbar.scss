@@ -2,11 +2,6 @@
   @include media-breakpoint-down(md) {
     padding: 1rem 0.25rem;
   }
-  top: -123px;
-  transition: top 0.2s ease-in-out;
-  &.scroll {
-    top: 0px;
-  }
 }
 
 .navbar-toggler {

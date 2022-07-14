@@ -7,10 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hadrian: Careers</title>
   <link href="css/styles.scss" rel="stylesheet">
+
+  <link rel="canonical" href="https://careers.hadrian.io/">
+  <meta property="og:url" content="https://careers.hadrian.io/">
+  <meta name="author" content="Hadrian">
+  <meta name="theme-color" content="#88DCDD">
+  <meta property="og:site_name" content="Hadrian Careers">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@hadriansecurity">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hadrian Careers">
+  <meta name="twitter:title" content="Hadrian Careers">
+  <meta name="description"
+    content="Hadrian is bringing to market a platform for next generation automation in digital security, built by hackers like you.">
+  <meta property="og:description"
+    content="Hadrian is bringing to market a platform for next generation automation in digital security, built by hackers like you.">
+  <meta name="twitter:description"
+    content="Hadrian is bringing to market a platform for next generation automation in digital security, built by hackers like you.">
+  <meta property="og:image" content="/img/og.png">
+  <meta name="twitter:image" content="/img/og.png">
+
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-md bg-darkmode-info">
+  <nav class="navbar navbar-expand-md bg-darkmode-info">
     <div class="container-md justify-content-center">
       <div class="container-nav">
         <a class="navbar-brand" href="/">
@@ -637,23 +658,6 @@
   </footer>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const nav = document.querySelector('.navbar');
-
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = () => {
-        const currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          if (nav) nav.classList.add('scroll');
-        } else {
-          if (nav) nav.classList.remove('scroll');
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    });
-  </script>
 
   <script>
     // ——————————————————————————————————————————————————
