@@ -42,14 +42,14 @@
 
   <header class="bg-darkmode-info pt-md-5 mb-md-5">
     <div class="scramble-container">
-      <p class="h1" style="left: 5%; top: 5%">##!></p>
-      <p class="h1" style="left: 0%; top: 45%">!#*</p>
-      <p class="h1" style="left: 6%; bottom: 8%">&lt;!&gt;</p>
+      <p class="h1 scramble-random" style="left: 5%; top: 5%">##!></p>
+      <p class="h1 scramble-random" style="left: 0%; top: 45%">!#*</p>
+      <p class="h1 scramble-random" style="left: 6%; bottom: 8%">&lt;!&gt;</p>
 
-      <p class="h1" style="right: 23%; top: 2%">##!></p>
-      <p class="h1" style="right: 3%; top: 20%">&lt;!&gt;</p>
-      <p class="h1" style="right: 13%; top: 40%">*&</p>
-      <p class="h1" style="right: 3%; top: 65%">///*</p>
+      <p class="h1 scramble-random" style="right: 23%; top: 2%">##!></p>
+      <p class="h1 scramble-random" style="right: 3%; top: 20%">&lt;!&gt;</p>
+      <p class="h1 scramble-random" style="right: 13%; top: 40%">*&</p>
+      <p class="h1 scramble-random" style="right: 3%; top: 65%">///*</p>
     </div>
 
     <div class="container-xxl">
@@ -657,7 +657,7 @@
 
   <script>
     // ——————————————————————————————————————————————————
-    // TextScramble
+    // TextScramble - https://codepen.io/soulwire/pen/mEMPrK
     // ——————————————————————————————————————————————————
 
     class TextScramble {
@@ -714,18 +714,30 @@
       }
     }
 
+    const phrases = [
+      '##!>',
+      '!#*r',
+      '&lt;!&gt;',
+      '*&',
+      '!__.',
+      '<3',
+      '///*'
+    ]
 
+    const [...elements] = document.querySelectorAll('.scramble-random')
 
     let counter = 0
     const next = () => {
-      fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 800)
+      new TextScramble(elements[counter]).setText(phrases[counter]).then(() => {
+        setTimeout(next, 10)
       })
       counter = (counter + 1) % phrases.length
     }
 
+
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.scramble').forEach((i) => { new TextScramble(i).setText(i.innerText) });
+      setTimeout(next, 1000)
     });
 
   </script>
