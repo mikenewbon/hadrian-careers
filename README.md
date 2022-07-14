@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="img/Wordmark_Blue.png" alt="Logo" height="48">
+    <img src="src/img/Wordmark_Blue.png" alt="Logo" height="48">
   </a>
 
 <h3 align="center">Hadrian Assignment: Creative Web Developer</h3>
@@ -40,12 +40,6 @@
 ## Getting Started
 
 If you want to build the project, you will first need to run `npm install` for the prerequiste node modules. You can then simply run parcel with `npm run start` which should also build the SCSS and a live-reload server, or for production export `npm run build`.
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
