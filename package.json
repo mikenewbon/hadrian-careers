@@ -4,7 +4,9 @@
     "build": "parcel build src/index.html --no-minify --public-url ./"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
     "cssnano": "^5.1.12",
+    "parcel": "^2.6.2",
     "postcss": "^8.4.14",
     "sass": "^1.53.0"
   },
